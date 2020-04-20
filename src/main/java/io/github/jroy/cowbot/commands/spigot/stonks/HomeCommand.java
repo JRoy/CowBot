@@ -2,6 +2,7 @@ package io.github.jroy.cowbot.commands.spigot.stonks;
 
 import com.earth2me.essentials.Essentials;
 import dev.tycho.stonks.command.base.ModularCommandSub;
+import dev.tycho.stonks.command.base.autocompleters.MemberCompanyNameAutocompleter;
 import dev.tycho.stonks.command.base.validators.CompanyValidator;
 import dev.tycho.stonks.model.core.Company;
 import dev.tycho.stonks.model.core.Member;
@@ -18,6 +19,7 @@ public class HomeCommand extends ModularCommandSub {
 
   public HomeCommand(HomeManager homeManager) {
     super(new CompanyValidator("company"));
+    addAutocompleter("company", new MemberCompanyNameAutocompleter());
     this.homeManager = homeManager;
     this.essentials = (Essentials) Bukkit.getServer().getPluginManager().getPlugin("Essentials");
   }

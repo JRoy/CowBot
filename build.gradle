@@ -30,7 +30,7 @@ dependencies {
     compileOnly "com.github.schlatt-co:Tagger:82ad15854a"
     compileOnly "com.github.schlatt-co:PluginLibrary:c65436d5b6"
     compileOnly "net.ess3:EssentialsX:2.17.0"
-    compileOnly 'com.github.schlatt-co:Stonks:b79d9291c1'
+    compileOnly 'com.github.schlatt-co:Stonks:2dee065d01'
 }
 
 configurations {
